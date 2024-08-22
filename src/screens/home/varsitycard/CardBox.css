@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.varsityCard {
+    width: 22%;
+    margin: auto;
+}
+
+.varsityCard .wrapperBox {
+    padding: 0.625rem;
+    margin: 0.625rem 0.3125rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.varsityCard .wrapperBox .cardback {
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    padding: 1.25rem 0.9375rem 0;
+    transition: ease-in-out 200ms;
+    font-size: 1.2rem;
+    min-width: 190px;
+    text-decoration: none;
+}
+
+.varsityCard .wrapperBox .cardback:hover {
+    transform: translate(0, -10px);
+}
+
+.varsityCard .wrapperBox .cardback .cardOuterWrap {
+    display: block;
+    min-height: 3.75rem;
+}
+
+.varsityCard .wrapperBox .cardback .cardOuterWrap .cardlogo {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 4.5rem;
+}
+
+.varsityCard .wrapperBox .cardback .modulesOuterBox {
+    margin: 1.2rem -0.9rem -0.9rem;
+    display: block;
+    background: var(--white);
+    padding: 0.9375rem;
+    box-shadow: 2px 4px 8px #ddd;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    color: var(--color-dark);
+    color: var(--black);
+    font-weight: 600;
+}
+
+/************MEDIA QUERY SECTION START***************/
+@media screen and (max-width:991px) {
+    .varsityCard {
+        width: 100%;
+        margin: auto;
+    }
+}

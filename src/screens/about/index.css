@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.aboutCompany {
+    padding: 1rem;
+    margin: 2rem 0rem;
+}
+
+.aboutCompany .aboutInfoHead {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--black);
+    text-align: start;
+}
+
+.aboutCompany .fincafeLogo {
+    width: 75%;
+    border-radius: 10px;
+}
+
+.aboutCompany .aboutCompanyInfo .innerInfoCont {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.aboutCompany .aboutCompanyInfo .innerInfoHead {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.aboutCompany .aboutCompanyInfo .lineShow {
+    display: block;
+    border-bottom: 2px solid var(--black);
+    width: 6em;
+    padding-top: 0;
+    margin-bottom: 0.6rem;
+}
+
+.aboutCompany .aboutCompanyInfo .subInnerCont {
+    font-size: 1.02rem;
+    font-weight: 400;
+}
+
+
+/*********MEDIA QUERY SECTION START***********/
+@media (max-width:991px) {
+    .aboutCompany .fincafeLogo {
+        width: 100%;
+    }
+}

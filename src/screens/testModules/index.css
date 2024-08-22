@@ -1,0 +1,56 @@
+.test-edit-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  .test-edit-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .test-edit-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .test-edit-card-content {
+    flex: 1;
+    padding-right: 16px;
+  }
+  
+  .test-edit-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .test-edit-description {
+    color: #4a5568;
+    margin-bottom: 8px;
+  }
+  .test-edit-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  .test-edit-button {
+    background-color: #0056b3;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  .test-edit-button:hover {
+    transform: scale(1.05);
+    background-color: #004080;
+  }
+  

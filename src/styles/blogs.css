@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap");
+
+.mainBlogPage {
+  font-family: "Montserrat", sans-serif;
+  padding: 50px 200px;
+}
+.mainBlogPageTitle {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.mainBlogPage img {
+  justify-content: center;
+  text-align: center;
+  /* width: 100%; */
+  /* padding: 0 100px; */
+}
+.blogImageStyleMain {
+  width: "100%";
+  margin-bottom: "10vh";
+}
+@media (max-width: 768px) {
+  .mainBlogPage {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.loginPage {
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+}
+
+.loginPage .loginInfoCont {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+    text-shadow: -1px -2px #ddd;
+}
+
+.loginPage .formOuterWrapper {
+    width: 100%;
+    padding: 2rem;
+    flex-direction: column !important;
+    gap: 0 !important;
+    box-shadow: 2px 4px 8px #ddd;
+}
+
+.loginPage .formWrapper .labelControl {
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.loginPage .formWrapper .formControl {
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 0.5rem 0.9rem;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    box-shadow: 2px 4px 8px #ddd;
+}
+
+.formOuterWrapper .btnSubmit {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    width: 100%;
+    margin: auto;
+    font-weight: 600;
+}
+
+
+.formOuterWrapper .btnSubmit:hover {
+    background-color: var(--black);
+    font-weight: 600;
+    color: var(--white);
+}
+
+/***********MEDIA QUERY SECTION START*********/
+@media screen and (max-width:991px) {
+    .loginPage {
+        width: 100%;
+    }
+}

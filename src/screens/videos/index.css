@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.videoOperation {
+    padding: 1rem;
+    margin: 2rem 0rem;
+}
+
+.videoOperation .videoInfoCont {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--black);
+    text-transform: capitalize;
+}
+@media (max-width: 768px) {
+    .videoOperation .videoInfoCont {
+        font-size: 2rem;
+    }
+    .videoOperation {
+        padding: 1rem 0;
+    }
+
+}

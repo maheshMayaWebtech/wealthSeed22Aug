@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.blogOuterWrapper {
+    box-shadow: 2px 4px 8px #ddd;
+    border: 1px solid #ddd;
+    padding: 2rem;
+}
+
+.blogOuterWrapper .blogologo {
+    max-width: 100%;
+    height: auto;
+}
+
+.blogOuterWrapper .blogTitle {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.blogOuterWrapper .blogTitle .titleLink {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.blogOuterWrapper .blogContent {
+    font-size: 1rem;
+    color: var(--grey);
+    font-weight: 600;
+}
+
+.blogOuterWrapper .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.blogOuterWrapper .wrapper .authorlogo {
+    max-width: 2.25rem;
+    margin-right: 0.9rem;
+    border: 2px solid #eee;
+    background: var(--white);
+    padding: 0.1rem;
+    border-radius: 50%;
+}
+
+.blogOuterWrapper .wrapper .authorinfo {
+    font-size: 0.8rem;
+    margin-bottom: 0rem;
+}
+
+.blogOuterWrapper .wrapper .authorinfoContent {
+    font-size: 0.8rem;
+    color: var(--grey);
+    font-weight: 600;
+    margin-bottom: 0rem;
+}
+
+.blogOuterWrapper .commentWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--grey);
+    font-weight: 500;
+}
+
+.blogOuterWrapper .commentDate {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--grey);
+    text-align: right;
+    display: block;
+}
+
+.moduleCategoryCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    font-family: "Montserrat", sans-serif !important;
+    margin-top: 100px;
+    margin: 10px;
+}
+.moduleCategoryCardSection {
+    box-shadow: 0 5px 5px 0px #80808038;
+}
+.moduleImage {
+    width: 100%;
+}
+.moduleCardAdmin {
+    grid-template-columns: 1fr 1fr !important;
+}
+.blogTitle, .blogContent {
+    margin: 0;
+    padding: 10px 20px;
+}
+.blogTitle {
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 22px;
+}
+.blogContent {
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(121, 121, 121);
+}
+.blogTitle span {
+    margin-right: 10px;
+    font-weight: 700;
+}
+.moduleReadMore {
+    margin: 5px 20px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+.moduleReadMore:hover {
+    background-color: rgba(0, 0, 0, 0.048);
+}
+.bothButtons {
+    display: flex;
+    justify-content: space-between;
+}
+.moduleDelete {
+    background-color: rgba(255, 0, 0, 0.345);
+    color: rgb(192, 0, 0);
+}
+.moduleEdit {
+    background-color: rgb(172, 172, 172);
+    color: white;
+}
+.moduleEdit:hover {
+    background-color: rgb(137, 137, 137);
+    color: white;
+    transform: scale(1.02);
+}
+.dashboardButtons button {
+    margin: 5px;
+}
+/***********MEDIA QUERY SECTION START***********/
+
+@media (max-width: 768px) {
+    .moduleCategoryCards {
+        grid-template-columns: 1fr;
+    }
+    .moduleReadMore {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .blogTitle {
+        font-size: 14px;
+    }
+    .blogContent {
+        font-size: 12px;
+    }
+    .blogTitle, .blogContent {
+        padding: 5px 10px;
+    }
+    .moduleCardAdmin {
+        grid-template-columns: 1fr !important;
+    }
+}

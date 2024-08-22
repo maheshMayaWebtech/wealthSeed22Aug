@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.blogsComment {
+    padding: 1rem;
+    margin: 2rem 0rem;
+}
+
+.blogsComment .blogsInfoHead {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--black);
+}
+.blogsInfoHead {
+    font-family: "Montserrat", sans-serif !important;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.blogsInfoHead div {
+    margin-left: 20px;
+    height: 10px;
+    width: 200px;
+    background-color: green;
+}
+@media (max-width: 768px) {
+    .blogsComment .blogsInfoHead {
+        font-size: 20px !important;
+    }
+    .blogsComment .blogsInfoHead div {
+        height: 5px;
+    }
+}

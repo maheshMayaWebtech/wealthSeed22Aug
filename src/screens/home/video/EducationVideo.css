@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.educationVideo {
+    /* width: 22%; */
+    text-align: left;
+}
+
+.educationVideo .videoOuterWrapper .videoOuterBack {
+    text-decoration: none;
+}
+
+.educationVideo .videoOuterWrapper .videoOuterBack .imageLogo {
+    width: 100%;
+    box-shadow: 2px 4px 8px #ddd;
+}
+
+.educationVideo .videoOuterWrapper .videoOuterBack .videoTitleBox {
+    display: block;
+    background: var(--white);
+    padding: 0.9375rem;
+    box-shadow: 2px 4px 8px #ddd;
+    border: none;
+    color: var(--color-dark);
+    color: var(--black);
+    font-weight: 600;
+}
+
+.educationVideo .videoOuterWrapper .videoTitleBox .boxCont {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: -0.5rem;
+}
+
+.educationVideo .videoOuterWrapper .videoTitleBox .boxCont:hover {
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.educationVideo .videoOuterWrapper .videoTitleBox .boxStream {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 0rem;
+}
+
+/***********MEDIA QUERY SECTION START***********/
+@media screen and (max-width:991px) {
+    .educationVideo {
+        width: 100%;
+        margin: 0.9rem auto;
+    }
+}

@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+.mainHomeContainer {
+    max-width: 1200px;
+}
+.heroBanner {
+    padding: 1rem;
+    margin: 4rem 0rem;
+}
+
+.heroBanner .bannerMainHead {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--black);
+    display: block;
+    line-height: 1.5;
+}
+
+.heroBanner .innerMainHead {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black);
+    display: block;
+}
+
+.heroBanner .bannerMainCont {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--grey);
+    max-width: 650px;
+}
+
+.heroBanner .navUserClick {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*************EXPLORE VARSITY SECTION START************/
+.ExploreVarsity {
+    padding: 1rem;
+}
+
+.ExploreVarsity .varsityInnerHead {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 2rem;
+}
+
+.ExploreVarsity .outerBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: row wrap;
+}
+
+/*************VIDEO SECTION START***********/
+.videoBox {
+    padding: 1rem;
+}
+
+.videoBox .educationVideo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 2rem;
+    margin-bottom: 0 !important;
+}
+
+.videoBox .videoWrapperBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/************OPEN ACCOUNT SECTION START*************/
+.OpenAccount {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    padding: 40px 40px 0;
+    margin-bottom: 40px;
+}
+
+.OpenAccount .accountInfoHead {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.OpenAccount .accountInfoCont {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--grey);
+    max-width: 500px;
+}
+
+.OpenAccount .btnAccount {
+    border: none;
+    outline: none;
+    background-color: var(--blue);
+    font-weight: 600;
+    color: var(--white);
+    padding: 0.9rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 40%;
+}
+
+.OpenAccount .btnAccount:hover {
+    background-color: var(--black);
+    font-weight: 600;
+}
+
+/************MEDIA QUERY SECTION START**********/
+@media screen and (max-width:992px) {
+    .heroBanner .bannerMainHead {
+        font-size: 3.2rem;
+        line-height: 1.4;
+    }
+
+    .ExploreVarsity .outerBox {
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .OpenAccount {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 8px;
+        padding: 0px 10px 0;
+        margin-bottom: 40px;
+    }
+
+    .OpenAccount .btnAccount {
+        width: 100%;
+        margin: 0.4rem 0rem;
+    }
+    .titleSkeleton {
+        width: 100% !important;
+    }
+    .subTitleSkeleton {
+        width: 90% !important;
+        height: 60px !important;
+    }
+    .descSkeleton {
+        width: 90% !important;
+        height: 300px !important;
+        margin-bottom: 10px;
+    }
+    .rightImageSkeleton {
+        width: 100% !important;
+    }
+    .videoBox {
+        padding: 1rem 0;
+    }
+}
