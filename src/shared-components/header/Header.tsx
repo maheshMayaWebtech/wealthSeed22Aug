@@ -107,7 +107,7 @@ const Header = ({ logo }: { logo: string }) => {
                 >
                   {pathnameMap[path]}
                 </span>
-                {path === "/modules" && showModule && !categoryLoading && (
+                {path === "/modules" && showModule && !categoryLoading && categories.length > 0 && (
                   <div
                     className="moduleCardMain"
                     style={{
@@ -124,7 +124,7 @@ const Header = ({ logo }: { logo: string }) => {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                   >
-                    {!categoryLoading && categories.length > 0 && (
+                    {!categoryLoading && (
                       <>
                         {categories?.map((item: any) => (
                           <div

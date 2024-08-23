@@ -108,12 +108,12 @@
 }
 
 .tabs button {
-  font-size: 15px;
+  font-size: 13px;
   border: none;
   background-color: transparent;
   cursor: pointer;
   padding: 10px 20px;
-  transition: color 0.3s, border-bottom 0.3s;
+  transition: color 0.3s, border-bottom 0.01s;
 }
 
 .tabs button.active {
@@ -153,6 +153,9 @@ form input, form select {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1em;
+}
+.sidebarItemsList::-webkit-scrollbar {
+  display: none;
 }
 
 @media (max-width: 768px) {

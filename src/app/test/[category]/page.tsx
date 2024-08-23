@@ -1,5 +1,4 @@
 "use client";
-import BlogsData from "@/screens/blogs";
 import Loader from "@/shared-components/loader";
 import axios from "axios";
 import { useParams } from "next/navigation";
@@ -47,16 +46,19 @@ const TestCategoryWiseData = () => {
     fetchCategories();
     fetchModules();
   }, [param]);
+
   const handleButtonClick = (url: string) => {
     window.open(url, "_blank");
   };
 
   return (
     <div className="maxWidthContainer">
-        <div className="text-3xl my-10 uppercase">{title}</div>
+      <div className="text-3xl my-10 uppercase">{title}</div>
       <div className="test-edit-container">
         {isLoading ? (
           <Loader />
+        ) : modules.length === 0 ? (
+          <div className="text-center text-gray-500 text-3xl">No data to show</div>
         ) : (
           <div>
             {modules.map((testModule) => (

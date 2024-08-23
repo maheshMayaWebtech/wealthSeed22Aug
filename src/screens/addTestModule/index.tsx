@@ -60,7 +60,7 @@ const AddTestModule: React.FC = () => {
 
   return (
     <div className="add-module-container">
-      <h1>Add Module</h1>
+      <h1>Add Test</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="title">Title</label>

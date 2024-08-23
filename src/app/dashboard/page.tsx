@@ -74,14 +74,14 @@ const DashboardPage: React.FC = () => {
         <div className="profile">
           <Image
             onClick={() => router.push("/")}
-            src={"/Images/companylogo.png"}
-            width={150}
+            src={"https://res.cloudinary.com/dtanynxqy/image/upload/v1724233321/home_logos/defeesphcvzxkq0ttzey.png"}
+            width={80}
             height={50}
             alt="logo"
           />
           <p>Company Inc.</p>
         </div>
-        <ul>
+        <ul className="sidebarItemsList overflow-auto">
           <li
             className={activeTab === "home" ? "active" : ""}
             onClick={() => setActiveTab("home")}
@@ -162,8 +162,9 @@ const DashboardPage: React.FC = () => {
         </div>
         <div className="tabs">
           <button
-            className={activeTab === "home" ? "active" : ""}
+            className={`${activeTab === "home" ? "active" : ""}`}
             onClick={() => setActiveTab("home")}
+            
           >
             Homepage Edit
           </button>

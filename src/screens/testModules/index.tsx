@@ -56,8 +56,8 @@ const TestModulesShow = () => {
 
   return (
     <div className="test-edit-container">
-      {testData.map((testModule) => (
-        <div key={testModule.categoryId} className="test-edit-card">
+      {testData.map((testModule,idx) => (
+        <div key={idx} className="test-edit-card">
           <div className="test-edit-card-content">
             <h2 className="test-edit-title">{testModule.title}</h2>
             <p className="test-edit-description">{testModule.description}</p>
@@ -72,12 +72,14 @@ const TestModulesShow = () => {
             <button
               onClick={() => handleEdit(testModule)}
               className="test-edit-button test-edit-edit-button"
+              style={{backgroundColor: '#ca8a04'}}
             >
               Edit
             </button>
             <button
               onClick={() => handleDelete(testModule._id)}
-              className="test-edit-button test-edit-delete-button"
+              className="test-edit-button test-edit-delete-button "
+              style={{backgroundColor: 'maroon'}}
             >
               Delete
             </button>

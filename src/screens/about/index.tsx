@@ -15,7 +15,7 @@ const AboutUs: FC = () => {
               <label className="w-100 mt-2">
                 <Image
                   src={
-                    "https://res.cloudinary.com/dqcr5yn0b/image/upload/v1723612707/aboulogo_hs0jiz.webp"
+                    "/Images/aboulogo.webp"
                   }
                   alt="aboutCompnayLogo"
                   className="fincafeLogo"
